@@ -1,0 +1,29 @@
+import java.util.*;
+import java.lang.*;
+public class org{
+	public static void main(String args[]){
+		Scanner obj=new Scanner(System.in);
+		System.out.print("enter the no of terms : ");
+		int n=obj.nextInt();
+		int n1;
+		int prime=0;
+		int comp=0;
+		for(int i=0;i<n;i++){
+			System.out.println("enter the num "+(i+1)+" : ");
+			n1=obj.nextInt();
+			int c=0;
+			for(int j=2;j<=n1;j++){
+				if(n1%j==0){
+					c++;
+				}
+			}
+			if(c==1)
+				prime++;
+			else
+				comp++;
+		}
+		System.out.println("prime : "+prime);
+		System.out.println("composite : "+comp);
+					
+	}
+}
