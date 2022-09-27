@@ -1,0 +1,42 @@
+import java.util.*;
+import java.lang.*;
+public class org{
+	public static void main(String args[]){
+		Scanner obj=new Scanner(System.in);
+		System.out.print("enter the num : ");
+		int n=obj.nextInt();
+		if(n<=0)
+			System.out.println("invalid..............");
+		else{
+		int[] a;
+		int rem,i=0;
+		a=new int[10];
+		while(n!=0){
+			rem=n%10;
+			a[i]=rem;
+			i++;
+			n/=10;
+		}
+		int c=0,c1=0;
+		for(int j=0;j<i;j++){
+			for(int k=0;k<i;k++){
+				for(int l=0;l<i;l++){
+					if(a[j]==a[k] && a[k]==a[l] || a[j]==a[k] || a[j]==a[l] || a[k]==a[l]){
+						c++;
+						continue;
+					}
+					else{
+						c1++;
+						System.out.print(a[j]);
+						System.out.print(a[k]);
+						System.out.println(a[l]);
+					}
+				}
+			}
+		}
+		if(c==1 && c1==0)
+			System.out.println("there is no permutation...");
+		
+		}		
+	}
+}
