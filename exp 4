@@ -1,0 +1,25 @@
+import java.util.*;
+public class org{
+public static void main(String args[]){
+	Scanner obj=new Scanner(System.in);
+	System.out.print("enter the n : ");
+	int n=obj.nextInt();
+	int a=0;
+	int b=1;
+	int s=0;
+	int c,f=0;
+	for(int i=2;f<n;i++){
+		c=a+b;
+		a=b;
+		b=c;
+		if(i%2==0){
+			s+=c;
+			//System.out.println(s);
+			f++;
+		}
+	}
+	System.out.println(s);
+		
+	
+	}
+}
