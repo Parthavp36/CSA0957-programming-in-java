@@ -1,0 +1,25 @@
+import java.util.*;
+public class org{
+	public static void main(String args[]){
+		Scanner obj=new Scanner(System.in);
+		System.out.println("enter the sentence : ");
+		String s=obj.nextLine();
+		int n;
+		System.out.print("vowels : ");
+		for(int i=0;i<s.length();i++){
+			n=s.charAt(i);
+			if(n==65 || n==97 || n==69 || n==101 || n==73 || n==105 || n==79 || n==111 || n==117 || n==85)
+				System.out.print(s.charAt(i)+" ");
+
+		}
+		System.out.print("\nconstants : ");
+		for(int i=0;i<s.length();i++){
+			n=s.charAt(i);
+			if(n==65 || n==97 || n==69 || n==101 || n==73 || n==105 || n==79 || n==111 || n==117 || n==85)
+				continue;
+			else
+				System.out.print(s.charAt(i)+" ");
+
+		}
+	}
+}
