@@ -1,0 +1,36 @@
+import java.util.*;
+public class org{
+	public void sbi(float a,int b,double c){
+		double ri=(a*b*c);
+		System.out.println("rate of interest : "+ri);
+	}
+	public void icici(float a,int b,double c){
+		double ri=(a*b*c);
+		System.out.println("rate of interest : "+ri);
+	}
+	public void axis(float a,int b,double c){
+		double ri=(a*b*c);
+		System.out.println("rate of interest : "+ri);
+	}
+	public static void main(String args[]){
+		Scanner obj=new Scanner(System.in);
+		System.out.print("1.sbi \n2.icici \n3.axis \nenter your choice : ");
+		int n=obj.nextInt();
+		org o2=new org();
+		System.out.print("enter the principle amount : ");
+		float p=obj.nextFloat();
+		System.out.print("enter the no of years : ");
+		int y=obj.nextInt();
+		System.out.print("enter the rate of interest : ");
+		double r=obj.nextDouble();
+		System.out.println(r);
+		if(n==1 && r==8.4)
+			o2.sbi(p,y,r);
+		else if(n==2 && r==7.3)
+			o2.icici(p,y,r);
+		else if(n==3 && r==9.7)
+			o2.axis(p,y,r);
+		else
+			System.out.println("invalid entry!!!! or rate of interest not matched......");
+	}
+}
