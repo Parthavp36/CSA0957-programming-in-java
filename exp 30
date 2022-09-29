@@ -1,0 +1,13 @@
+import java.util.*;
+public class org{
+	public static void main(String args[]){
+		Scanner obj=new Scanner(System.in);
+		System.out.println("enter the number  : ");
+		float n=obj.nextFloat();
+		float s=n*n;
+		float s2=(n*n*n);
+		System.out.printf("square of the number : %.2f",s);
+		System.out.printf("\ncube of the number : %.3f",s2);
+		
+	}
+}
