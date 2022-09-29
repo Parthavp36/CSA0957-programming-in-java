@@ -1,0 +1,26 @@
+import java.util.*;
+public class org{
+	public int fact(int a){
+		if(a==0 || a==1)
+			return a;
+		else
+			return a*fact(a-1);
+	}
+	public static void main(String args[]){
+		try{
+		Scanner obj=new Scanner(System.in);
+		System.out.println("enter the number  : ");
+		int n=obj.nextInt();
+		if(n<0)
+			System.out.println("invalid.....");
+		else{
+		org o2=new org();
+		System.out.println(o2.fact(n));
+		}
+		}
+		catch(Exception as){
+			System.out.println("invalid........");
+		}
+		
+	}
+}
