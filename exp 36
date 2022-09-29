@@ -1,0 +1,24 @@
+import java.util.*;
+public class org{
+	public static void main(String args[]){
+		Scanner obj=new Scanner(System.in);
+		System.out.print("enter the num : ");
+		int n=obj.nextInt();
+		String[] s;
+		s=new String[50];
+		for(int i=1;i<=n;i++){
+			if(i%3==0 && i%5==0)
+				s[i]="fizzbuzz";
+			else if(i%3==0)
+				s[i]="fizz";
+			else if(i%5==0)
+				s[i]="buzz";
+			else{
+				String s1=Integer.toString(i);
+				s[i]=s1;
+			}
+		}
+		for(int i=1;i<=n;i++)
+			System.out.println(s[i]);
+	}
+}
