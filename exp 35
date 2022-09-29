@@ -1,0 +1,55 @@
+import java.util.*;
+public class org{
+	public int accdet(){
+			String name,type;
+			int acno,bal=10000;
+			Scanner o2=new Scanner(System.in);
+			Scanner o4=new Scanner(System.in);
+			System.out.print("enter the account number : ");
+			acno=o2.nextInt();
+			System.out.print("\nenter the depositor name : ");
+			name=o4.nextLine();
+			System.out.print("\nenter the account type(s/c): ");
+			type=o4.nextLine();
+			System.out.print("\n.............................................");
+			System.out.println("\n\nacc number : "+acno);
+			System.out.println("depositor name : "+name);
+			System.out.println("account type : "+type);
+			System.out.println("balance  : "+bal);
+			return bal;
+	}
+	public int depo(int b){
+			int amt;
+			Scanner o5=new Scanner(System.in);
+			System.out.print("enter the deposit amount : ");
+			amt=o5.nextInt();
+			return (b+amt);
+	}
+	public int with(int c){
+		int amt;
+		Scanner o6=new Scanner(System.in);
+		System.out.println("enter the withdraw amount : ");
+		amt=o6.nextInt();
+		return (c-amt);
+	}
+	public static void main(String args[]){
+		Scanner obj=new Scanner(System.in);
+		org o3=new org();
+		org ob=new org();
+		int b=o3.accdet();
+		System.out.print("\n.............................................\npress any key to continue...");
+		String ch=obj.nextLine();
+		System.out.print("\n\n1.deposit \n2.withdraw \nenter your choice : ");
+		int n=obj.nextInt();
+		if(n==1)
+		b=o3.depo(b);
+		else
+			b=o3.with(b);
+		if(b<500){
+		System.out.print("there should be minimum balance of rs 500......");
+		}
+		else{
+			System.out.print("\ntransaction success!!!! \nbalance : "+b);
+		}
+	}
+}
