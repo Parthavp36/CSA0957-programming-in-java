@@ -1,0 +1,28 @@
+import java.util.*;
+public class org{
+	public static void main(String args[]){
+		try{
+		Scanner obj=new Scanner(System.in);
+		System.out.println("enter the num : ");
+		float n1=obj.nextInt();
+		int n=(int)n1;
+		int c=0;
+		if(n<=0 || n!=n1)
+			System.out.println("invalid........");
+		else{
+		for(int i=1;i<n;i++){
+			if(n%i==0)
+				c+=i;
+		}
+		if(n==c)
+		System.out.println("it is a perfect number ...............");
+		else
+			System.out.println("it is not a perfect number ..........");
+		}
+		}
+		catch(Exception a){
+			System.out.println("invalid.....");
+		}
+			
+	}
+}
