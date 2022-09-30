@@ -1,0 +1,51 @@
+//SAME ELEMENTS IN AN ARRAY :
+import java.util.*;
+public class org{
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		try
+		{
+			int[] a=new int[100];
+			int[] b=new int[100];
+			int an,bn;
+			System.out.println("enter the no of elements in arr 1: ");
+			an=sc.nextInt();
+			System.out.println("enter the no of elements in arr 2: ");
+			bn=sc.nextInt();
+			System.out.println("Enter a array : ");
+			for(int i=0;i<an;i++)
+			{
+				a[i]=sc.nextInt();
+			}
+			System.out.println("Enter a array : ");
+			for(int i=0;i<bn;i++)
+			{
+				b[i]=sc.nextInt();
+			}
+			System.out.println("Same elements in array : ");
+			System.out.print("[");
+			for(int i=0;i<an;i++)
+			{
+				for(int j=0;j<bn;j++)
+				{
+					
+					if(a[i]==b[j])
+					{
+						if(a[i]>0)
+						{
+							System.out.print(a[i]+" ");
+						}
+						
+					}
+				}
+			}
+			System.out.print("]");
+		}
+
+		catch(Exception v)
+		{
+			System.out.print("Invalid Input!!!");
+		}
+		
+	}
+}
