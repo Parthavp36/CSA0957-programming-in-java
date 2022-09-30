@@ -1,0 +1,24 @@
+//SQUARE ROOT : 
+import java.util.*;
+public class org{
+	public static void main(String[] args) {
+		Scanner obj=new Scanner(System.in);
+		System.out.print("enter the number : ");
+		int n=obj.nextInt();
+		if(n<=0)
+			System.out.println("invalid............");
+		else{
+		int c=0;
+		for(int i=-n;i<n;i++){
+			int n1=i*i;
+			if(i*i==n){
+				System.out.print(i+" ");
+				c++;
+			}
+		}
+		if(c==0)
+			System.out.println("invalid..............");
+		}
+		
+	}
+}
